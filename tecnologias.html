@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologias</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/tecnologias.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                    <circle cx="24" cy="24" r="24" fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M24 0C24 0 24 24 0 24C23.5776 24.1714 24 48 24 48C24 48 24 24 48 24C24 24 24 0 24 0Z"
+                        fill="#0B0D17" />
+                </svg>
+            </div>
+            <div class="line-division"></div>
+            <div>
+                <ul class="menu-bar">
+                    <li><a href="index.html"> <strong>00</strong> Home</a></li>
+                    <li><a href="destino.html"> <strong>01</strong> Destinos</a></li>
+                    <li><a href="equipe.html"> <strong>02</strong> Equipe</a></li>
+                    <li class="highlight-page"><a href="tecnologias.html"> <strong>03</strong> Tecnologias</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h3 class="title"> <span class="span-numbers">03 </span> LANÇAMENTO ESPACIAL</h3>
+
+        <div class="container-main" id="container-1">
+            <div class="repair-content">
+                <div class="container-text">
+                    <p>A TERMINOLOGIA...</p>
+                    <h1>VEÍCULO DE LANÇAMENTO</h1>
+                    <p>Um veículo de lançamento ou foguete transportador é um veículo <br> movido a foguete usado para
+                        transportar uma carga da superfície <br> da Terra para o espaço, geralmente para a órbita da
+                        Terra
+                        ou além. <br>
+                        Nosso foguete transportador WEB-X é o mais poderoso em operação. <br> Com 150 metros de altura,
+                        é
+                        uma visão
+                        inspiradora <br> na plataforma de lançamento!
+                    </p>
+                </div>
+                <div class="container-buttons">
+                    <button type="button" class="buttons  highlight-button" onclick="mostrarConteudo(1)"> 1 </button>
+                    <button type="button" class="buttons " onclick="mostrarConteudo(2)"> 2 </button>
+                    <button type="button" class="buttons" onclick="mostrarConteudo(3)"> 3 </button>
+                </div>
+            </div>
+            <div class="container-img container-img1">
+                <img src="assets/img/foguete.png" alt="foguete">
+            </div>
+
+        </div>
+        <div class="container-main" id="container-2" style="display: none;">
+            <div class="repair-content">
+                <div class="container-text">
+                    <p>A TERMINOLOGIA...</p>
+                    <h1>VEÍCULO DE LANÇAMENTO</h1>
+                    <p>Um veículo de lançamento ou foguete transportador é um veículo <br> movido a foguete usado para
+                        transportar uma carga da superfície <br> da Terra para o espaço, geralmente para a órbita da
+                        Terra
+                        ou além. <br>
+                        Nosso foguete transportador WEB-X é o mais poderoso em operação. <br> Com 150 metros de altura,
+                        é
+                        uma visão
+                        inspiradora <br> na plataforma de lançamento!
+                    </p>
+                </div>
+                <div class="container-buttons">
+                    <button type="button" class="buttons " onclick="mostrarConteudo(1)"> 1 </button>
+                    <button type="button" class="buttons highlight-button" onclick="mostrarConteudo(2)"> 2 </button>
+                    <button type="button" class="buttons" onclick="mostrarConteudo(3)"> 3 </button>
+                </div>
+            </div>
+            <div class="container-img container-img2">
+                <img src="assets/img/spaceport.jpg" alt="Terra vista do espaço">
+            </div>
+
+        </div>
+        <div class="container-main" id="container-3" style="display: none;">
+            <div class="repair-content">
+                <div class="container-text">
+                    <p>A TERMINOLOGIA...</p>
+                    <h1>CAPSULA DO ESPAÇO</h1>
+                    <p>Um veículo de lançamento ou foguete transportador é um veículo <br> movido a foguete usado para
+                        transportar uma carga da superfície <br> da Terra para o espaço, geralmente para a órbita da
+                        Terra
+                        ou além. <br>
+                        Nosso foguete transportador WEB-X é o mais poderoso em operação. <br> Com 150 metros de altura,
+                        é
+                        uma visão
+                        inspiradora <br> na plataforma de lançamento!
+                    </p>
+                </div>
+                <div class="container-buttons">
+                    <button type="button" class="buttons " onclick="mostrarConteudo(1)"> 1 </button>
+                    <button type="button" class="buttons " onclick="mostrarConteudo(2)"> 2 </button>
+                    <button type="button" class="buttons highlight-button" onclick="mostrarConteudo(3)"> 3 </button>
+                </div>
+            </div>
+            <div class="container-img container-img3">
+                <img src="assets/img/capsula.png" alt="Capsula">
+            </div>
+        </div>
+    </main>
+    <script>
+        function mostrarConteudo(containerId) {
+            const containers = document.querySelectorAll('.container-main');
+
+            containers.forEach(container => {
+                container.style.display = 'none';
+            });
+
+            const container = document.getElementById(`container-${containerId}`);
+            if (container) {
+                container.style.display = 'flex';            }
+
+        }
+    </script>
+</body>
+
+</html>

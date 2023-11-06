@@ -1,0 +1,65 @@
+
+body {
+    background-image: url(../assets/img/Bitmap-transformed\ \(3\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #FFF;
+}
+/*Main*/
+main{
+    font-family: Bellefair;
+    justify-content: space-around;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.container-text h3{
+    font-family: Barlow Condensed;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4px;
+
+}
+.container-text p{
+    font-family: Barlow Condensed;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+.container-text h1{
+    font-weight: 500;
+    font-size: 150px;
+    text-transform: uppercase;
+
+}
+button {
+   width: 30vh;
+    height: 29vh;
+    border-radius: 50%; 
+    border: none; 
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    background-color: #d3d5d7bd;
+    font-weight: 500;
+    font-family: Barlow Condensed;
+
+}
+button:hover{
+    background-color: #d3d5d7;
+    transition: .5s;
+}
+@media (max-width: 800px) {
+    body{
+        text-align: center;
+        background-position: top;        
+    }
+}
+

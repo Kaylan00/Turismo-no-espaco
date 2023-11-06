@@ -1,0 +1,90 @@
+body{
+    background-image: url(../assets/img/fundo-equipe.png);
+    background-color: #131720;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+main img
+{
+    width: 480px;
+    height: 585px;
+}
+.container-main{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-main{
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+ }
+
+
+.meet{
+    font-family: Barlow Condensed;
+}
+.meet h3{
+    color: #ffffff;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-family: Bellefair;
+    text-transform: uppercase;
+}
+.container-text h1, h3, p{
+    padding-bottom: 1.5rem;
+}
+.container-text h3{
+    color: #d0d6f98a;
+    font-family: Bellefair;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+
+}
+.container-text h1{
+    font-weight: 500;
+    font-size: 56px;
+    font-family: Bellefair;
+}
+.container-text p{
+    color: #D0D6F9;
+    font-family: Barlow Condensed;
+    font-size: 1.1rem;
+    font-weight: 100;
+    line-height: 25px;
+    letter-spacing: 1.5px;
+}
+.inputs input{
+    margin-right: 10px ;   
+}
+/*Nevagations*/
+.navigation-button {
+    cursor: pointer;
+}
+
+.navigation-button.active circle {
+    fill: white;
+}
+
+.navigation-button:not(.active) circle {
+    fill: #cccccc96; 
+}
+
+@media (max-width: 800px) {
+    main img{
+        width: 90%;
+        height: 80%;
+    }
+
+}
+

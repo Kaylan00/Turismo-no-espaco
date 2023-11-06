@@ -1,0 +1,102 @@
+body{
+    background-image: url(../assets/img/fundo-destinos.png);
+    background-color: #131720;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Barlow Condensed;
+    color: #ffffff;
+}
+main{
+    width: 100%;
+}
+.title{
+    color: #ffffff;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 0 0 4rem 11rem;
+    font-family: Bellefair;
+    text-transform: uppercase;
+}
+img{
+    width: 23rem;
+}
+.container-main{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    max-height: 100%;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.container-subnavegations{
+    display: flex;
+    gap: 2.5rem;
+ 
+}
+
+.container-subnavegations li{
+    list-style: none;
+    color: #D0D6F9;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.container-subnavegations li:hover{
+    border-bottom: #d0d6f9b6 solid 2px;
+    padding-bottom: 5px;
+    color: #ffffff92;
+    transition: .1s;
+}
+.content-informations{
+    display: flex;
+    gap: 3rem;
+    border-top: solid 1px #d0d6f937;
+    padding-top: 10px;
+
+}
+
+/*destaques*/
+.container-subnavegations .highlight-li{
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 5px;
+}
+h1{
+    font-family: Bellefair;
+    font-weight: 400;
+    font-size: 7em;
+}
+p{
+    color: #D0D6F9;
+    font-family: Barlow Condensed;
+    font-size: 1.1rem;
+    font-weight: 100;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+@media (max-width: 800px) {
+    main{
+        margin-bottom: 50px;
+    }
+    .container-main{
+        flex-direction: column;
+        text-align: center;
+       
+    }
+    .title{
+        margin: 0 0 50px 25px;
+    }
+    img{
+        margin-bottom: 50px;
+    }
+}
