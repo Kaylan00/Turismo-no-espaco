@@ -30,15 +30,14 @@ main img
  }
 
 
-.meet{
+.meet .meet2{
     font-family: Barlow Condensed;
 }
-.meet h3{
+.meet h3, .meet2{
     color: #ffffff;
     font-weight: 300;
     letter-spacing: 2px;
     font-family: Bellefair;
-    text-transform: uppercase;
 }
 .container-text h1, h3, p{
     padding-bottom: 1.5rem;
@@ -85,6 +84,12 @@ main img
         width: 90%;
         height: 80%;
     }
-
+    .container-main{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .meet{
+        display: none;
+    }
 }
 

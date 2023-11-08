@@ -126,6 +126,12 @@ img{
         background-image: url(../assets/img/capsula-fundo.jpg);
     }
  }
- @media (max-width: 480px) {
- }
-
+ @media (max-width: 600px) {
+    .menu-bar{
+        flex-wrap: wrap;
+    }
+    .container-img{
+        background-position: center;
+    }
+    
+}
